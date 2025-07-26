@@ -1,0 +1,102 @@
+.logoimage {
+  width: 100px;
+}
+
+.header_outer_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  background-color: rgb(20, 20, 20);
+  height: 10vh;
+  color: #fff;
+  transition: all 0.5s ease-in;
+  z-index: 1;
+}
+
+.header_container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul li {
+  list-style: none;
+}
+
+/* Default styles for larger screens */
+.header_left ul,
+.header_right ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftSide-Container ul li:hover {
+  cursor: pointer;
+}
+
+/* .header_container ul {
+  width: 140%;
+} */
+
+.header_left ul {
+  width: 150%;
+}
+
+/* Menu Toggle Button for small screens */
+.menu-toggle-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+/* Responsive styles for tablets and smaller devices */
+@media screen and (max-width: 768px) {
+  .Header-Container {
+    width: 95%;
+  }
+
+  .menu-toggle-btn {
+    display: block; /* Show the button on smaller screens */
+    
+  }
+
+  /* Hide the left menu by default on small screens */
+  .leftSide-Container ul {
+    display: none; /* Ensure the menu is hidden initially */
+    flex-direction: column; /* Stack vertically */
+    background-color: rgb(20, 20, 20);
+    position: absolute; /* Overlay on the screen */
+    top: 10vh; /* Below the navbar */
+    left: 0;
+    width: 100%;
+  }
+
+  /* Display the left menu when toggled open */
+  .menu-open {
+    display: flex; /* Show the menu */
+  }
+
+  /* Ensure the right side menu behaves correctly */
+  .RightSide-Container ul {
+    display: flex; /* Always show this menu */
+    flex-direction: row; /* Keep it horizontal */
+  }
+}
+
+/* Extra small devices (phones) */
+@media screen and (max-width: 480px) {
+  .logoimage {
+    width: 60px; /* Adjust logo size */
+  }
+
+  ul li {
+    font-size: 12px; /* Smaller font size for menu items */
+    margin-right: 5px;
+  }
+}
