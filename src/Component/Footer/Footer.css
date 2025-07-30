@@ -9,7 +9,7 @@
 }
 
 .footer_inner_container {
-    width: 100%;
+    width: 80%;
     max-width: 1200px; /* Set a max-width for larger screens */
     display: flex;
     flex-direction: column; /* Stack items vertically on smaller screens */
