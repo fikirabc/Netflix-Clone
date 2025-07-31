@@ -4,7 +4,6 @@ import React, { useState, useEffect } from "react";
 import axios from "../../utils/axios";
 // eslint-disable-next-line no-unused-vars
 import requests from "../../utils/requests";
-
 import "./Banner.css";
 function Banner() {
   const [movie, setMovie] = useState({});
