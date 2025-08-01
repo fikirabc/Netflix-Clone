@@ -1,4 +1,4 @@
-const API_KEY = "";
+const API_KEY = "a57930c04cc1f06e507fa56ce674c644";
 
 // const API_KEY = import.meta.env.API_KEY;
 // const Api_key = import.meta.env.VITE_TMDB_KEY;
